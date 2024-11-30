@@ -1,0 +1,26 @@
+﻿@model ProductDetailsViewModel
+@{
+    ViewData["Title"] = $"Product | {Model.Sku}";
+}
+
+<h1>@Model.Name</h1>
+
+@if (Model.Edit)
+{
+    <partial name="_ProductDetailsEdit" model="Model"/>
+
+    <div>
+        @Html.ActionLink("[View]", "Details", "Products",
+            routeValues: new { edit = false })
+    </div>
+}
+else
+{
+    <partial name="_ProductDetailsView" model="Model"/>
+
+    <div>
+        @Html.ActionLink("[Edit]", "Details", "Products",
+            routeValues: new { edit = true })
+    </div>
+}
+

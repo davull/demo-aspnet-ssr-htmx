@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - AspNetSsrDemo.Web</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/AspNetSsrDemo.Web.styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">AspNetSsrDemo.Web</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/Home/Privacy">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/Products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/HtmxProducts">Products (HTMX)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main role="main" class="pb-3">
+        <h1>Products</h1>
+        <div class="products-container">
+          
+          <!-- Header -->
+          <div class="products-header">
+            <div class="product-column">Name</div>
+            <div class="product-column">SKU</div>
+            <div class="product-column">Price</div>
+          </div>
+          
+          <!-- Rows -->
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/1">Apple iPhone 14</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/1">APL-IPH14</a>
+            </div>
+            <div class="product-column">$999.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/2">Samsung Galaxy S23</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/2">SMSG-GS23</a>
+            </div>
+            <div class="product-column">$849.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/3">Google Pixel 7</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/3">GGL-PXL7</a>
+            </div>
+            <div class="product-column">$649.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/4">Apple MacBook Pro 16"</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/4">APL-MBP16</a>
+            </div>
+            <div class="product-column">$2,499.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/5">Dell XPS 15</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/5">DL-XPS15</a>
+            </div>
+            <div class="product-column">$1,999.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/6">Samsung Galaxy Watch 4</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/6">SMRT-WTCH4</a>
+            </div>
+            <div class="product-column">$199.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/7">Sony PlayStation 5</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/7">SNYP-PS5</a>
+            </div>
+            <div class="product-column">$499.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/8">Microsoft Xbox Series X</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/8">MS-XBX</a>
+            </div>
+            <div class="product-column">$499.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/9">Bose QuietComfort 45</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/9">BOSE-QC45</a>
+            </div>
+            <div class="product-column">$329.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/10">JBL Charge 5 Bluetooth Speaker</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/10">JBL-CHRG5</a>
+            </div>
+            <div class="product-column">$179.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/11">Apple iPad 10th Gen</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/11">APL-IPAD10</a>
+            </div>
+            <div class="product-column">$449.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/12">Amazon Kindle Paperwhite</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/12">AMZN-KDL12</a>
+            </div>
+            <div class="product-column">$129.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/13">LG OLED 65" C3</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/13">LG-OLED65C3</a>
+            </div>
+            <div class="product-column">$1,799.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/14">Sony WH-1000XM5 Headphones</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/14">SNYP-WH1000XM5</a>
+            </div>
+            <div class="product-column">$399.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/15">HP Omen 17 Gaming Laptop</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/15">HP-OMEN17</a>
+            </div>
+            <div class="product-column">$1,599.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/16">Nintendo Switch OLED Model</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/16">NIN-SWOL</a>
+            </div>
+            <div class="product-column">$349.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/17">Garmin Forerunner 955</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/17">GAR-FR955</a>
+            </div>
+            <div class="product-column">$499.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/18">Dyson V15 Detect Vacuum</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/18">DY-VC15</a>
+            </div>
+            <div class="product-column">$749.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/19">Steam Deck 512GB</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/19">STM-MB7</a>
+            </div>
+            <div class="product-column">$649.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/20">Razer Kraken V3 Pro Headset</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/20">RZ-KRAKENV3</a>
+            </div>
+            <div class="product-column">$199.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/21">Apple Watch Series 7</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/21">APL-WCHSER7</a>
+            </div>
+            <div class="product-column">$399.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/22">Samsung Galaxy Tab S8</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/22">SMSG-TAB8</a>
+            </div>
+            <div class="product-column">$699.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/23">Google Nest Hub 2nd Gen</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/23">GGL-NESTHUB2</a>
+            </div>
+            <div class="product-column">$99.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/24">Microsoft Surface Pro 9</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/24">MS-SURF9</a>
+            </div>
+            <div class="product-column">$1,299.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/25">Razer DeathAdder V3 Mouse</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/25">RZ-DEATHADDER</a>
+            </div>
+            <div class="product-column">$69.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/26">Apple AirPods 3rd Gen</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/26">APL-AIRP3</a>
+            </div>
+            <div class="product-column">$179.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/27">Samsung 55" QLED Smart TV</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/27">SMRT-TV55</a>
+            </div>
+            <div class="product-column">$1,099.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/28">DJI Mini 3 Drone</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/28">DJI-MINI3</a>
+            </div>
+            <div class="product-column">$799.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/29">Belkin Bolt 360 Power Bank</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/29">BL-BOLT360</a>
+            </div>
+            <div class="product-column">$59.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/30">KRK Rokit 5 Studio Monitor</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/30">KRK-RKT5</a>
+            </div>
+            <div class="product-column">$149.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/31">LG UltraGear 34" Gaming Monitor</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/31">LG-ULTRAG34</a>
+            </div>
+            <div class="product-column">$899.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/32">Logitech MX Keys Keyboard</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/32">LOGI-MXKEYS</a>
+            </div>
+            <div class="product-column">$99.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/33">Sony Blu-ray 4K Player</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/33">SONY-BRX4K</a>
+            </div>
+            <div class="product-column">$249.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/34">Microsoft Surface Laptop 5</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/34">MS-SFPLAT</a>
+            </div>
+            <div class="product-column">$1,199.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/35">TP-Link AXE75 WiFi 6E Router</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/35">TP-LINKAXE75</a>
+            </div>
+            <div class="product-column">$199.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/36">Seagate 8TB External Hard Drive</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/36">HDD-SEAGATE8T</a>
+            </div>
+            <div class="product-column">$179.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/37">HyperX Cloud II Gaming Headset</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/37">HYP-XCLOUD2</a>
+            </div>
+            <div class="product-column">$99.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/38">WD Black 2TB NVMe SSD</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/38">WD-BLACK2T</a>
+            </div>
+            <div class="product-column">$199.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/39">Philips Hue Bridge</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/39">PHI-HUEBRI</a>
+            </div>
+            <div class="product-column">$49.99</div>
+          </div>
+          <div class="products-row">
+            <div class="product-column">
+              <a href="/Products/Details/40">NVIDIA GeForce RTX 4070 GPU</a>
+            </div>
+            <div class="product-column">
+              <a href="/Products/Details/40">CRDS-RTX4070</a>
+            </div>
+            <div class="product-column">$599.99</div>
+          </div>
+          
+          <!-- Footer -->
+          <div class="products-footer">
+            <div class="product-footer-column">Count: 40</div>
+            <div class="product-footer-column">Average Price: $604.49</div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="border-top footer text-muted">
+      <div class="container">
+        © 2024 - AspNetSsrDemo.Web -
+        <a href="/Home/Privacy">Privacy</a>
+      </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+  </body>
+</html>

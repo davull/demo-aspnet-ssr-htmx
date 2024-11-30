@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | APL-IPH14 - AspNetSsrDemo.Web</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/AspNetSsrDemo.Web.styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">AspNetSsrDemo.Web</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/Home/Privacy">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/Products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/HtmxProducts">Products (HTMX)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main role="main" class="pb-3">
+        <h1>Apple iPhone 14</h1>
+        <form action="/Details" class="edit-product-form" method="post">
+          <input data-val="true" data-val-required="The Id field is required." id="Id" name="Id" type="hidden" value="1">
+          <div class="form-row">
+            <label class="form-label" for="Sku">Sku</label>
+            <input class="form-input" data-val="true" data-val-required="The Sku field is required." id="Sku" name="Sku" type="text" value="APL-IPH14">
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="Name">Name</label>
+            <input class="form-input" data-val="true" data-val-required="The Name field is required." id="Name" name="Name" type="text" value="Apple iPhone 14">
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="Price">Price</label>
+            <input class="form-input" data-val="true" data-val-number="The field Price must be a number." data-val-required="The Price field is required." id="Price" lang="en" min="0.00" name="Price" type="number" value="999.99">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-submit">Save</button>
+            <button type="reset" class="btn btn-reset">Reset</button>
+          </div>
+          <input name="__RequestVerificationToken" type="hidden" value="[VerificationToken]">
+        </form>
+        <div>
+          <a href="/Products/Details/1?edit=False">[View]</a>
+        </div>
+      </main>
+    </div>
+    <footer class="border-top footer text-muted">
+      <div class="container">
+        © 2024 - AspNetSsrDemo.Web -
+        <a href="/Home/Privacy">Privacy</a>
+      </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+  </body>
+</html>

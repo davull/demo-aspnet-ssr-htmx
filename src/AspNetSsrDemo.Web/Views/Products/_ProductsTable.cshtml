@@ -1,0 +1,31 @@
+﻿@model ProductsViewModel
+
+<div class="products-container">
+
+    <!-- Header -->
+    <div class="products-header">
+        <div class="product-column">Name</div>
+        <div class="product-column">SKU</div>
+        <div class="product-column">Price</div>
+    </div>
+
+    <!-- Rows -->
+    @foreach (var product in Model.Products)
+    {
+        <div class="products-row">
+            <div class="product-column">
+                @Html.ActionLink(product.Name, "Details", "Products", routeValues: new { id = product.Id })
+            </div>
+            <div class="product-column">
+                @Html.ActionLink(product.Sku, "Details", "Products", routeValues: new { id = product.Id })
+            </div>
+            <div class="product-column">@product.Price.ToString("C")</div>
+        </div>
+    }
+
+    <!-- Footer -->
+    <div class="products-footer">
+        <div class="product-footer-column">Count: @Model.Products.Count</div>
+        <div class="product-footer-column">Average Price: @Model.AveragePrice.ToString("C")</div>
+    </div>
+</div>

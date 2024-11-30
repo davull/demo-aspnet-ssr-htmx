@@ -1,0 +1,16 @@
+﻿@model ProductDetailsViewModel
+
+<div class="product-details-container">
+    <div class="product-details-row">
+        <div class="product-details-label">SKU:</div>
+        <div class="product-details-value">@Model.Sku</div>
+    </div>
+    <div class="product-details-row">
+        <div class="product-details-label">Name:</div>
+        <div class="product-details-value">@Model.Name</div>
+    </div>
+    <div class="product-details-row">
+        <div class="product-details-label">Price:</div>
+        <div class="product-details-value">@Model.Price.ToString("C")</div>
+    </div>
+</div>

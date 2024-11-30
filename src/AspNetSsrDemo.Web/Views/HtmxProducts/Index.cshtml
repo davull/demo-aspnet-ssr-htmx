@@ -1,0 +1,20 @@
+﻿@model ProductsViewModel
+@{
+    ViewData["Title"] = "HTMX Products";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Filter Input -->
+<div class="products-filter">
+    <label for="filterInput">Filter:</label>
+    <input type="text"
+           id="filterInput"
+           name="query"
+           placeholder="Filter products..."
+           hx-get="/htmxproducts/search"
+           hx-target=".products-container"
+           hx-trigger="keyup delay:500ms changed"/>
+</div>
+
+<partial name="_HtmxProductsTable" model="Model"/>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetSsrDemo.Web", "AspNetSsrDemo.Web\AspNetSsrDemo.Web.csproj", "{097C8EEE-D40F-4312-BADC-1C80491CB989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetSsrDemo.Web.Tests", "AspNetSsrDemo.Web.Tests\AspNetSsrDemo.Web.Tests.csproj", "{867BE3AA-3553-44D3-A924-0C3B644E1CAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{097C8EEE-D40F-4312-BADC-1C80491CB989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097C8EEE-D40F-4312-BADC-1C80491CB989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097C8EEE-D40F-4312-BADC-1C80491CB989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097C8EEE-D40F-4312-BADC-1C80491CB989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867BE3AA-3553-44D3-A924-0C3B644E1CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867BE3AA-3553-44D3-A924-0C3B644E1CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867BE3AA-3553-44D3-A924-0C3B644E1CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867BE3AA-3553-44D3-A924-0C3B644E1CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
